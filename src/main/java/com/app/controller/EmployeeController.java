@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
    @Controller
 @RequestMapping(path = "emp")
 public class EmployeeController {
-	@RequestMapping(path = "/show", method = RequestMethod.POST)
+	@RequestMapping(path = "/show")
 	public String showPages(Model m) {
 		m.addAttribute("msg","Welcome App:" + new Date());
 		return "Home";
