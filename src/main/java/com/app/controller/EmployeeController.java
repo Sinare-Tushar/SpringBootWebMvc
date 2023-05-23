@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
    @Controller
-@RequestMapping(path = "emp", method = RequestMethod.POST)
+@RequestMapping(path = "emp")
 public class EmployeeController {
 	@RequestMapping(path = "/show", method = RequestMethod.POST)
 	public String showPages(Model m) {
